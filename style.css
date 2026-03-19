@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #efe7d2;
+  color: #5a453f;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page-shell {
+  width: 900px;
+  margin: 14px auto;
+  padding: 0;
+  background: #e8ddbf;
+}
+
+.site-header {
+  min-height: 60px;
+  padding: 10px 16px;
+  background: #765461;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-title {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: italic;
+  color: #f3e7df;
+}
+.site-logo {
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main-nav {
+  background: #ffffff;
+  padding: 7px 34px 9px;
+  display: flex;
+  gap: 56px;
+  font-size: 13px;
+}
+
+.main-nav a {
+  color: #7f5f68;
+  text-decoration: none;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr 110px;
+  gap: 16px;
+  padding: 20px 6px 10px;
+}
+
+.filters h2,
+.products-heading h2,
+.ad-column h2,
+.info-card h2,
+.product-copy h3 {
+  margin: 0;
+  color: #7e5f67;
+  font-weight: 700;
+}
+
+.filters {
+  font-size: 13px;
+}
+
+.filter-group {
+  margin-bottom: 34px;
+}
+
+.filter-group h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.filter-two {
+  margin-top: 30px;
+}
+
+.products-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.products-heading h2 {
+  font-size: 17px;
+}
+
+.products-heading p {
+  margin: 0;
+  font-size: 14px;
+  color: #4f3f30;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 18px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-body {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.product-image {
+  width: 112px;
+  height: 82px;
+  object-fit: cover;
+  border: 1px solid #7a4b39;
+}
+
+.product-copy {
+  flex: 1;
+}
+
+.product-copy h3 {
+  font-size: 18px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.product-copy ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 1.15;
+}
+
+.product-copy li {
+  margin-bottom: 5px;
+}
+
+.product-footer {
+  margin-top: 10px;
+  min-height: 35px;
+  background: #ab8387;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.price {
+  margin: 0;
+  padding: 6px 10px;
+  color: #fff2ec;
+  font-size: 17px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-right: 6px;
+}
+
+.actions button {
+  border: 1px solid #c6b3b2;
+  background: #ffffff;
+  color: #5c4b4d;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ad-column {
+  font-size: 12px;
+  line-height: 1.15;
+}
+
+.ad-column h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.ad-column p {
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+.info-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 22px 6px 18px;
+}
+
+.info-card h2 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.info-card,
+.info-card p,
+.info-card li {
+  font-size: 12px;
+  line-height: 1.18;
+}
+
+.about-block {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.about-image {
+  width: 118px;
+  height: 89px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info-card p,
+.info-card ul {
+  margin: 0;
+}
+
+.info-card ul {
+  padding-left: 18px;
+}
+
+.site-footer {
+  background: #765461;
+  color: #f2e6df;
+  text-align: center;
+  font-size: 12px;
+  padding: 6px 12px 18px;
+  border-radius: 0 0 28px 28px;
+}
+
+@media (max-width: 940px) {
+  .page-shell {
+    width: min(100%, 900px);
+  }
+}
+
+@media (max-width: 780px) {
+  .content-grid,
+  .info-columns,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
