@@ -38,9 +38,7 @@ This project is a front-end recreation of a coffee shop product page based on a 
 
 ## 🖼️ Screenshot
 
-## 🖼️ Screenshot
-
-## ![Java Jam Screenshot](images/screenshot.png)
+## ![Java Jam Screenshot](/screenshot.png)
 
 ## 📁 Project Structure
 
